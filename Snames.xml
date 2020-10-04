@@ -1,0 +1,60 @@
+<dropdown>
+	<country name="india">
+		<state value='mh'>Maharashtra</state>
+		<state value='tn'>Tamil Nadu</state>
+		<state value='dhl'>Delhi</state>
+		<state value='guj'>Gujarat</state>
+		<state value='pjb'>Punjab</state>
+		<state value='up'>Uttar Pradesh</state>
+		<state value='kerl'>Kerala</state>
+		<state value='mp'>Madhya Pradesh</state>
+		<state value='assm'>Assam</state>
+		<state value='raj'>Rajasthan</state>
+	</country>
+	<country name="russia">
+		<state value='mco'>Moscow</state>
+		<state value='stpet'>Saint Petersburg</state>
+		<state value='nvb'>Novosibirsk</state>
+		<state value='ykt'>Yekaterinburg</state>
+		<state value='nn'>Nizhny Novgorod</state>
+		<state value='sam'>Samara</state>
+		<state value='omsk'>Omsk</state>
+		<state value='kzn'>Kazan</state>
+		<state value='chlb'>Chelyabinsk</state>
+		<state value='rod'>Rostov-on-Don</state>
+	</country>
+	<country name="canada">
+		<state value=''>Alberta</state>
+		<state value=''>British Columbia</state>
+		<state value=''>Manitoba</state>
+		<state value=''>New Brunswick</state>
+		<state value=''>Newfoundland and Labrador</state>
+		<state value=''>Nova Scotia</state>
+		<state value=''>Ontario</state>
+		<state value=''>Prince Edward Island</state>
+		<state value=''>Quebec</state>
+		<state value=''>Saskatchewan</state>
+	</country>
+	<country name="brz">
+		<state value='rj'>Rio de Janeiro</state>
+		<state value='am'>Amazonas</state>
+		<state value='ba'>Bahia</state>
+		<state value='ce'>Ceará</state>
+		<state value='mg'>Minas Gerais</state>
+		<state value='rs'>Rio Grande do Sul</state>
+		<state value='sp'>São Paulo</state>
+		<state value='rn'>Rio Grande do Norte</state>
+		<state value='pr'>Paraná</state>
+		<state value='pa'>Pará</state>
+	</country>
+	<country name="jp">
+		<state value='hk'>Hokkaidō</state>
+		<state value='thk'>Tōhoku</state>
+		<state value='knt'>Kantō</state>
+		<state value='chu'>Chūbu</state>
+		<state value='kns'>Kansai</state>
+		<state value='chg'>Chūgoku</state>
+		<state value='shk'>Shikoku</state>
+		<state value='kyh'>Kyūshū</state>
+	</country>
+</dropdown>
