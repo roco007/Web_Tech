@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Populate State Dropdown Using jQuery AJAX</title>
+<script src="jquery-3.5.1.js"></script>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $.ajax({
+        url: "states.xml",
+        dataType: 'xml',
+        success: parse
+      });
+
+
+    $("select.country").change(function(){
+      $.ajax({
+        url: "states.xml",
+        dataType: 'xml',
+        success: parse
+      });
+    });
+
+    function parse(xml) {
+      var selectedCountry = $(".country option:selected").val();
+          $('select.state').empty();
+          currentCountry = $(xml).find("country[name='"+selectedCountry+"']");
+          currentCountry.find("state").each(function(){
+            var optionValue = $(this).attr('value');
+            var optionText = $(this).text();
+            $('select.state').append(
+            '<option value="'+ optionValue + '">' + optionText + '</option>'
+            );
+          });
+    }
+  });
+</script>
+<style>
+  body {
+    margin: 0px;
+  }
+  form {
+    margin: 20px;
+  }
+  fieldset {
+    padding: 30px 30px 50px 50px;
+  }
+  select {
+    margin-top: 5px;
+    padding: 10px;
+    width: 200px;
+    background: #f1f1f1;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+  }
+</style>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <label>Country:</label><br>
+      <select class="country">
+        <option value="india">India</option>
+        <option value="russia">Russia</option>
+        <option value="can">Canada</option>
+        <option value="braz">Brazil</option>
+        <option value="jp">Japan</option>
+      </select><br><br>
+      <label>State:</label><br>
+      <select class="state">
+        <!-- insert states here -->
+      </select>
+    </fieldset>
+  </form>
+</body>
+</html>
